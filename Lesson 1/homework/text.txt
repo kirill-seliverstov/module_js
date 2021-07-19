@@ -1,14 +1,15 @@
+10 string
+
+
+2 number
+6 number
+9px string
+$45 string
+2 number
 NaN
-
-
-
-
-
-
-
-
-
-
-
-
-
+Infinity number
+   -9
+    5
+1 number
+NaN 
+false Boolean
