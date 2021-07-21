@@ -3,7 +3,7 @@ console.log ('Задание №1');
 let x = 11; // x = 23
 let y = 23; // y = 11
 
-x = x + 12;
+x = x + 12; 
 y = y - 12;
 
 console.log(x);
