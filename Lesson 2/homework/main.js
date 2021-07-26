@@ -67,14 +67,15 @@ while (i <= x) {
 
 
 // Задание №2
+let x = prompt('X?', '')
 
-/* for (let x = prompt('X?', ''); x > 0; x--) {
+for (x; x > 0; x--) {
     if (x % 2 == 0) {
         console.log(+x);
     }
-} */
+}
 
-let x = prompt('X?', '');
+/* let x = prompt('X?', '');
 
 while (x > 0) {
     if (x % 2 == 0) {
@@ -82,5 +83,5 @@ while (x > 0) {
     }
     x--;
 }
-
+ */
 
