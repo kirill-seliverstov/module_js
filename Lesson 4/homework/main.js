@@ -1,9 +1,9 @@
 // Задание №1
 
 /* let arr = [];
-let i = 2;
 
-for(i; i <= 20; i++) {
+
+for(let i = 2; i <= 20; i++) {
     if (i % 2 == 0) {
         arr.push(i);
     }

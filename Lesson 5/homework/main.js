@@ -18,7 +18,7 @@ for(let key in obj) {
 let city = {};
 
 city.name = "Minsk";
-city.population = "1.975 million"
+city.population = "1.975 million";
 
 
 // Задание №3
@@ -29,17 +29,17 @@ let arr = [
     {name: "Homel", population: "0.508 million"},
     {name: "Grodno", population: "0.368 million"},
     {name: "Minsk", population: "1.975 million"},
-    {name: "Mogilev", population: "0.380 million"},
+    {name: "Mogilev", population: "0.380 million"}
 ];
 
 
 // Задание №4
 
 function citysOfBelarus(info) {
-    let x = 0;
-    for (x; x < info.length; x++) {
-        console.log(info[x]);
-    } 
-}
+    for (let x = 0; x < info.length; x++) {
+       console.log(info[x].name + ': ' + info[x].population);
+    }
+};
 
 citysOfBelarus(arr);
+
