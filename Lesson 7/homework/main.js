@@ -100,3 +100,8 @@ function currentDate() {
 // 
 // Задание №7
 // 
+
+let date = new Date();
+let now = new Date(date.getFullYear(), date.getMonth(), date.getDate(), 0, 0, 0);
+let result = Math.floor((date.getTime() - now.getTime()) / 1000);
+console.log(result);
