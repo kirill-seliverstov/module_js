@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .child {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            transition: 1s;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: yellow;
+            width: 80%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .black {
+            background-color: #000;
+            width: 80%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .borderRadius {
+            border-radius: 50%;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .wrapper > div {
+            width: 150px;
+            height: 150px;
+            background-color: lightpink;
+            display: flex;
+            justify-self: center;
+            align-items: center;
+            font-size: 30px;
+            color: #fff;
+            text-align: center;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- №1 - через атрибуты. Плохая практика -->
+    <button onclick="handler('eventAtribute')">eventAtribute#1</button>
+    <button onclick="eventAtribute()">eventAtribute#2</button>
+
+    <!-- №2 - через свойства DOM. -->
+    <button class="eventDOM">eventDOM</button>
+    
+    <!-- №3 - ивент листы -->
+    <button class="eventListener">eventListener</button>
+
+
+    <button class="eventButton">eventButton</button>
+
+    <div class="">
+        <div class="child red"></div>
+        
+        <div class="child green">
+            <div class="black">
+                <div class="yellow"></div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <a class="adukar" href="https://adukar.by">Adukar</a>
+    </div>
+
+    <div class="wrapper">
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
