@@ -24,6 +24,8 @@ changeText.addEventListener('click', function () {
 // Задание №3
 // 
 
+// Почему это не работает с формой? Закомментил form - все стало прекрасно
+
 let inputTaskThree = document.getElementsByClassName('input-task-three')[0];
 let enable = document.getElementsByClassName('enable-form')[0];
 let disable = document.getElementsByClassName('disable-form')[0];
