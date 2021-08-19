@@ -94,5 +94,5 @@ wrapper.addEventListener('click', function(event) {
         return;
     }
     
-    targer.classList.add('borderRadius')
+    targer.classList.add('border-radius')
 });

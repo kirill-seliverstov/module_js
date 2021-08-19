@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .task {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .folder {
+            width: 100px;
+            height: 100px;
+        }
+
+        .opened-folder {
+            background-image: url('./folder.png');
+        }
+
+        .closed-folder {
+            background-image: url('./opened.png');
+        }
+
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        .wrapper > div {
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: #fff;
+            margin: 10px;
+            transition: .5s;
+        }
+
+        .border-radius {
+            border-radius: 50%;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 class="task">Задание №1</h1>
+    
+    <input class="only-numbers" type="text">
+    
+    <h1 class="task">Задание №2</h1>
+
+    <div class="folder opened-folder"></div>
+
+    <h1 class="task">Задание №3</h1>
+
+    <div class="wrapper"></div>
+
+    <script src="main.js"></script>
+</body>
+</html>
