@@ -2,7 +2,12 @@
 // Задание №1
 // 
 
-
+document.querySelector(".only-numbers").addEventListener("keypress", function (evt) {
+    if (evt.keyCode < 48 || evt.keyCode > 57)
+    {
+        evt.preventDefault();
+    }
+});
 
 
 // 
