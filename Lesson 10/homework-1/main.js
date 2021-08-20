@@ -31,10 +31,12 @@ let enable = document.getElementsByClassName('enable-form')[0];
 let disable = document.getElementsByClassName('disable-form')[0];
 
 disable.addEventListener('click', function(event) {
-    inputTaskThree.setAttribute('disabled', 'disabled')
+    event.preventDefault();
+    inputTaskThree.setAttribute('disabled', 'disabled');
 });
 
 enable.addEventListener('click', function(event) {
-    inputTaskThree.removeAttribute('disabled', 'disabled')
+    event.preventDefault();
+    inputTaskThree.removeAttribute('disabled', 'disabled');
 });
 
