@@ -40,3 +40,39 @@ enable.addEventListener('click', function(event) {
     inputTaskThree.removeAttribute('disabled', 'disabled');
 });
 
+
+// 
+// Задание №4
+// 
+
+let heart = document.querySelector('.heart');
+
+heart.onmousedown = function(event) {
+    heart.style.position = 'absolute';
+    heart.style.zIndex = 1000;
+
+    document.body.append(heart);
+
+    moveAt(event.pageX, event.pageY);
+
+    function moveAt(pageX, pageY) {
+        heart.style.left = pageX - heart.offsetWidth / 2 + 'px';
+        heart.style.top = pageY - heart.offsetHeight / 2 + 'px';
+    }
+
+    function onMouseMove(event) {
+        moveAt(event.pageX, event.pageY);
+    }
+
+    document.addEventListener('mousemove', onMouseMove);
+
+    heart.onmouseup = function () {
+        document.removeEventListener('mousemove', onMouseMove);
+        heart.onmouseup = null;
+    };
+
+    heart.ondragstart = function() {
+        return false;
+      };
+
+};
