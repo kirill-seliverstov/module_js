@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="feedback" action="#">
+        <p>Форма обратной связи</p>
+        <input value="Alex" type="text" name="name" placeholder="Name">
+        <input type="email" name="email" placeholder="Email">
+        <input type="text" name="phone" placeholder="Phone">
+        
+        <select name="from" id="">
+            <option value="Belarus">Беларусь</option>
+            <option value="Russia">Россия</option>
+            <option value="Japan" selected>Япония</option>
+            <option value="China">Китай</option>
+        </select>
+    </form>
+
+    <form name="login" action="#">
+        <p>Форма аторизации</p>
+        <input type="text" name="name" placeholder="Name">
+        <input type="password" name="password" placeholder="Password">
+        <label>
+            Запомнить
+            <input name="remember" type="checkbox">
+        </label>
+    </form>
+
+    <form name="registration" action="#">
+        <p>Форма регистрации</p>
+        <input type="text" name="name" placeholder="Name">
+        <input type="password" name="pwd" placeholder="Password">
+        <input type="password" name="confirm-pwd" placeholder="Confirm password">
+        <input type="submit">
+    </form>
+
+    <script src="main.js"></script>
+</body>
+</html>
