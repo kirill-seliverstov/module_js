@@ -27,12 +27,21 @@ let zeroInfo = searchPerson.querySelector('[name = "info[0]"]');
 console.log(zeroInfo);
  
 // Задание №8
+let label = document.createElement('label');
+
 let select = document.createElement('select');
-
-document.body.appendChild(select);
-
 let firstOption = document.createElement('option');
 let secondOption = document.createElement('option');
+
+let allInputs = document.getElementsByTagName('input');
+let searchInput = allInputs.length;
+
+label.textContent = 'Выберите вариант: ';
+document.body.appendChild(label);
+
+label.after(allInputs[searchInput - 1]);
+
+label.appendChild(select);
 
 firstOption.text = '1';
 secondOption.text = '2';
@@ -40,15 +49,4 @@ secondOption.text = '2';
 select.appendChild(firstOption);
 select.appendChild(secondOption);
 
-let labelForSelect = document.createElement('label');
 
-labelForSelect.textContent = 'Выберите вариант: ';
-
-document.body.appendChild(labelForSelect);
-
-labelForSelect.after(select);
-
-let allInputs = document.getElementsByTagName('input');
-let searchInput = allInputs.length;
-
-select.after(allInputs[searchInput - 1]);
