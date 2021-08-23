@@ -3,21 +3,15 @@
 // 
 
 function counterFactory(start, step) {
-    step = 0;
-
     function tictoc() {
+        let sum = 0;
+        sum = start + step;
         step++;
-        return start + step;
+        return sum;
     }
 
     return tictoc;
 }
-
-// let counter = counterFactory(3);
-// console.log(counter());
-// console.log(counter());
-// console.log(counter());
-// console.log(counter());
 
 
 // 
@@ -49,10 +43,13 @@ let test = take(100, function(x) {
 let str = 'Разбейте текст этой задачи на отдельные слова, удаляя по пути точки и запятые, а полученные слова сложите в массив. Напишите функцию, которая возвращает массив из тех же слов, но развёрнутых задом наперёд, причём массив должен быть отсортирован по количеству букв в слове. Напишите другую функцию, которая считает общее количество букв «с» во всех элементах массива.'
 let newStr = str.replace(/[.,\s]/g, ' ').split('').reverse().join('');
 
-letterC();
+function words() {
+    let onlyWords = str.split(' ');
+    console.log(onlyWords);
+};
 
-function sortDependingOnLetters(str) {
-    return str.split(' ').sort(sorting);
+function sortDependingOnLetters() {
+    return newStr.split(' ').sort(sorting);
 };
 
 function sorting(first, second) {
@@ -65,7 +62,8 @@ function letterC() {
     let count = 0;
     let newStr2 = str.split('');
     newStr2.forEach(function(elem) {
-        if (elem == 'с' || elem == 'С') {
+        elem.toLowerCase();
+        if (elem == 'с') {
             count++;
         } 
     });
