@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .task-2 {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            padding-right: 10px;
+            margin: 10px;
+        }
+
+        .wrapper {
+            display: flex;
+        }
+
+        .child {
+            margin: 10px;
+        }
+
+        #was {
+            width: 50px;
+            background-color: red;
+        }
+
+        #became {
+            width: 50px;
+            background-color: green;
+        }
+    </style>
+
+</head>
+<body>
+    <p style="font-weight: bold;">Задание №2: </p>
+
+    <form class="task-2" action="">
+        <label>
+             Изначальная высота
+            <input type="number" id="start">
+        </label>
+        <label>
+            Добавить
+            <input type="number" id="add">
+        </label>
+    </form>
+
+    <div class="wrapper">
+        <div class="child">
+            <p id="was-text">Было:</p>
+            <div id="was"></div>
+        </div>
+        <div class="child">
+            <p id="became-text">Стало:</p>
+            <div id="became"></div>
+        </div>
+    </div>
+
+    <br>
+
+    <p style="font-weight: bold;">Задание №1: </p>
+    <script src="main.js"></script>
+</body>
+</html>
