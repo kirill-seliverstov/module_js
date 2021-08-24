@@ -48,15 +48,19 @@ let add = document.getElementById('add');
 let was = document.getElementById('was');
 let became = document.getElementById('became');
 let wasText = document.getElementById('was-text');
+let wasTextAdd = document.createElement('p');
 let becameText = document.getElementById('became-text');
+let becameTextAdd = document.createElement('p');
 
+wasText.appendChild(wasTextAdd);
+becameText.appendChild(becameTextAdd);
 
 start.addEventListener('change', function () {
-    wasText.textContent += start.value;
+    wasTextAdd.textContent = start.value;
     was.style.height = start.value + 'px';
 });
 
 add.addEventListener('change', function () {
-    becameText.textContent += (+start.value + +add.value);
+    becameTextAdd.textContent = (+start.value + +add.value);
     became.style.height = (+start.value + +add.value) + 'px';
 });
