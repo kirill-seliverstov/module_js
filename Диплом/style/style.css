@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}
+
+.categoryes{
+    margin-top: 30px;
+    padding-left: 30px;
+}
+
+.categoryes__list{
+    max-width: 300px;
+}
+
+.categoryes__item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.categoryes__name{
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.button, .input{
+    padding: 5px 10px;
+    font-size: 18px;
+}
