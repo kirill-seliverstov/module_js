@@ -69,7 +69,7 @@ function templateItemCategory(name){
 
     let deleteItem = document.createElement('button');
     deleteItem.className = 'categoryes__delete';
-    deleteItem.innerHTML = '&#10060';
+    deleteItem.innerHTML = 'x';
 
     wrapperItem.appendChild(deleteItem);
 

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import './base/reset';
+@import './abstracts/variables';
+@import './components/buttons';
+@import './layout/categories';
+
+* {
+    font-family: Quicksand !important
+}
+
+.title {
+    font-size: 40px;
+    color: $black;
+}
+
+
+
