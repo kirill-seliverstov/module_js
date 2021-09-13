@@ -1,1 +1,2 @@
-let categories = ['Dailies', 'Resin'];
+let categories = ['Eat', 'Sleep'];
+let total = [];

@@ -1,1 +1,5 @@
 renderCategory();
+
+renderExpensesCategories();
+
+renderExpensesDate();

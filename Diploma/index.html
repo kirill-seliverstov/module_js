@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./assets/sass/style.css">
 </head>
 <body>
-    <section class="categories">
-            <p class="title categories__title">categories</p>
+    <section class="section categories">
+        <p class="title categories__title">categories</p>
             <div>
                 <form action="#">
                     <input class="categories__enter-name" id="js-category-name" type="text" placeholder="Enter category name">
@@ -18,25 +18,32 @@
             </div>
 
             <div class="categories__wrapper" id="js-list-of-categories">
-                <div class="categories__item">
-                    <p class="categories__name">Raiden shogun</p>
-                    <div>
-                        <button class="button">x</button>
-                        <button class="button">rename</button>
-                    </div>
-                </div>
-                <div class="categories__item">
-                    <p class="categories__name">Raiden shogun</p>
-                    <div>
-                        <button class="button">x</button>
-                        <button class="button">rename</button>
-                    </div>
-                </div>
+                
             </div>        
     </section>
 
-    <script src="./assets/js/main.js"></script>
+    <section class="section">
+        <button class="button">expenses</button>
+        <button class="button">income</button>
+    </section>
+
+    <section class="section expenses">
+        <p class="title categories__title">expenses</p>
+        <form class="expenses__form" action="#">
+            <input class="expenses__sum" type="number" name="" id="">
+            <select class="expenses__category" name="" id=""></select>
+            <input class="expenses__date" type="date" name="" id="">
+            <button class="js-add-expenses-button button">Add expense</button>
+        </form>
+
+        <div class="expenses__list"></div>
+
+
+    </section>
+
     <script src="./assets/js/variables.js"></script>
+    <script src="./assets/js/categories.js"></script>
+    <script src="./assets/js/expenses.js"></script>
     <script src="./assets/js/innit.js"></script>
 </body>
 </html>
