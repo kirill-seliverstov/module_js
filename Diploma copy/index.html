@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/sass/style.css">
+</head>
+<body>
+    <section class="section categories">
+        <p class="categories__title title">categories</p>
+            <div>
+                <form action="#">
+                    <input class="categories__enter-name input" id="js-category-name" type="text" placeholder="Enter category name">
+                    <button class="button categories__add" id="js-add-category">+</button>
+                </form>
+            </div>
+
+            <div class="categories__wrapper" id="js-list-of-categories">
+                
+            </div>        
+    </section>
+
+
+    <section class="section expenses">
+        <p class="title expenses__title">expenses</p>
+        <form class="expenses__form" action="#">
+            <input class="expenses__sum" type="number" name="" id="">
+            <select class="expenses__category" name="" id=""></select>
+            <input class="expenses__date" type="date" name="" id="">
+            <button class="js-add-expenses-button button">Add expense</button>
+        </form>
+
+        <div class="expenses__list"></div>
+
+
+    </section>
+
+    <script src="./assets/js/variables.js"></script>
+    <script src="./assets/js/categories.js"></script>
+    <script src="./assets/js/expenses.js"></script>
+    <script src="./assets/js/innit.js"></script>
+</body>
+</html>
