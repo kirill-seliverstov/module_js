@@ -371,6 +371,14 @@ textarea {
   background-color: inherit;
 }
 
+.input {
+  color: #d63f74;
+  border: 1px solid;
+}
+.input::placeholder {
+  color: #d63f74;
+}
+
 .categories__title {
   margin-bottom: 25px;
 }
@@ -378,11 +386,6 @@ textarea {
 .categories__enter-name {
   width: 30%;
   padding-left: 10px;
-  color: #d63f74;
-  border: 1px solid;
-}
-.categories__enter-name::placeholder {
-  color: #d63f74;
 }
 
 .categories__wrapper {
@@ -409,6 +412,8 @@ textarea {
 }
 
 .section {
+  margin: 0 auto;
+  max-width: 920px;
   padding-top: 100px;
   text-align: center;
 }

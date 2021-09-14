@@ -1,2 +1,2 @@
 let categories = ['Eat', 'Sleep'];
-let total = [];
+let expenses = [];

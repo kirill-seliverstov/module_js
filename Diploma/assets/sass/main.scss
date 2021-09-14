@@ -2,6 +2,7 @@
 @import './base/reset';
 @import './abstracts/variables';
 @import './components/buttons';
+@import './components/inputs';
 @import './layout/categories';
 
 * {
@@ -14,6 +15,8 @@
 }
 
 .section {
+    margin: 0 auto;
+    max-width: 920px;
     padding-top: 100px;
     text-align: center;
 }

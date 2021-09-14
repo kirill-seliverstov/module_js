@@ -102,7 +102,7 @@ function editCategory(parentElement){
     categoryItem.className = 'categories__item';
 
     let inputItem = document.createElement('input');
-    inputItem.className = 'categories__name';
+    inputItem.className = 'categories__name input';
     inputItem.value = oldCategory;
 
     categoryItem.appendChild(inputItem);
