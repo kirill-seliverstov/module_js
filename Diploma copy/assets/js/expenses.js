@@ -60,30 +60,23 @@ function renderExpenses() {
 function templateExpenseItem(expense) {
     let expenseItem = document.createElement('div');
     expenseItem.className = 'expenses__item';
+    
+    let expensesSumOfMoney = document.createElement('p');
+    let expenseName = document.createElement('p');
+    let expensesDate = document.createElement('p');
 
     for(let key in expense) {
-        let expensesSumOfMoney = document.createElement('p');
 
         if(key == 'sum') {
             expensesSumOfMoney.textContent = expense[key];
             expenseItem.appendChild(expensesSumOfMoney);
-        }
-
-        let expenseName = document.createElement('p');
-
-        if(key == 'category') {
+        } else if(key == 'category') {
             expenseName.textContent = expense[key];
             expenseItem.appendChild(expenseName);
-        }
-
-        let expensesDate = document.createElement('p');
-
-        if(key == 'date') {
+        } else if(key == 'date') {
             expensesDate.textContent = expense[key];
             expenseItem.appendChild(expensesDate);
         }
-        
     }
-
     return expenseItem;
 }
