@@ -3,8 +3,10 @@
 @import './abstracts/variables';
 @import './components/buttons';
 @import './components/inputs';
+@import './components/modal';
 @import './layout/categories';
-@import './layout/expenses';
+@import './layout/operation';
+@import './layout/total';
 
 * {
     font-family: Quicksand !important
@@ -21,4 +23,7 @@
     text-align: center;
 }
 
+.operation__form--hidden {
+    display: none;
+}
 

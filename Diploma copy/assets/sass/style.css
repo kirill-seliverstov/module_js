@@ -378,6 +378,31 @@ textarea {
 .input::placeholder {
   color: #d63f74;
 }
+.input::-webkit-calendar-picker-indicator {
+  background-color: #d63f74;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background: rgba(27, 27, 27, 0.8);
+}
+.modal--hidden {
+  display: none;
+}
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.modal__form input, .modal__form select {
+  background-color: #333;
+}
 
 .categories {
   background-color: rgba(59, 16, 83, 0.199);
@@ -385,6 +410,7 @@ textarea {
 }
 
 .categories__title {
+  padding-top: 100px;
   margin-bottom: 25px;
   color: #d63f74;
 }
@@ -409,9 +435,33 @@ textarea {
   width: 70%;
 }
 
-.expenses__title {
-  margin-top: 100px;
-  margin-bottom: 25px;
+@keyframes append-animate {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.operation__form {
+  margin-top: 25px;
+  animation: append-animate 0.3s linear;
+}
+
+.total {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+.total__cell {
+  padding: 5px;
+  border-top: 1px solid #d63f74;
+  border-bottom: 1px solid #d63f74;
+}
+.total tr {
+  padding: 10px;
 }
 
 * {
@@ -427,6 +477,10 @@ textarea {
   max-width: 920px;
   padding-top: 100px;
   text-align: center;
+}
+
+.operation__form--hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

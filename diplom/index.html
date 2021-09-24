@@ -2,43 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./assets/sass/style.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <section class="section categories">
-        <p class="categories__title title">categories</p>
-            <div>
-                <form action="#">
-                    <input class="categories__enter-name input" id="js-category-name" type="text" placeholder="Enter category name">
-                    <button class="button categories__add" id="js-add-category">+</button>
-                </form>
-            </div>
+    <div class="categoryes">
+        <div class="categoryes__wrapper">
+            <form>
+                <input class="js-category input" type="text" placeholder="Please, enter name category">
+                <input class="js-add-category button" type="submit" value="Add">
+            </form>
+        </div>
+        <div class="categoryes__list"></div>
+    </div>
 
-            <div class="categories__wrapper" id="js-list-of-categories">
-                
-            </div>        
-    </section>
+    <div>
+        <button class="expenses button">Expenses</button>
+        <button class="income button">Income</button>
+    </div>
+    <div class="operation">
+        <form class="operation__form operation__form--hidden">
+            <input class="operation__sum input" type="number">
+            <select class="operation__category input"></select>
+            <input class="operation__date input" type="date">
 
-    <section class="section operation">
-        <button class="expenses button">expenses</button>
-        <button class="income button">income</button>
-
-        <form class="operation__form operation__form--hidden" action="#">
-            <input class="operation__sum input" type="number" name="" id="">
-            <select class="operation__category input" name="" id=""></select>
-            <input class="operation__date input" type="date" name="" id="">
-            <input class="js-add-operation button input" type="submit">
+            <input class="js-add-operation button" type="submit">
         </form>
-    </section>
+    </div>
 
-    <table class="section total">
+    <table class="total" border="1" cellspacing="0" cellpadding="5">
         <thead class="total__head">
             <tr>
                 <td class="total__cell">
-                    #
+                    №
                 </td>
                 <td class="total__cell">
                     Category
@@ -95,12 +92,10 @@
         </form>
     </div>
 
-
-
-    <script src="./assets/js/variables.js"></script>
-    <script src="./assets/js/categories.js"></script>
-    <script src="./assets/js/operation.js"></script>
-    <script src="./assets/js/total.js"></script>
-    <script src="./assets/js/innit.js"></script>
+    <script src="js/variables.js"></script>
+    <script src="js/operation.js"></script>
+    <script src="js/categoryes.js"></script>
+    <script src="js/total.js"></script>
+    <script src="js/init.js"></script>
 </body>
 </html>

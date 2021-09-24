@@ -1,7 +1,12 @@
+// Инициализация проекта
+
+// Категории
 renderCategory();
 
-renderExpensesCategories();
+// Категории в расходах
+renderExpensesCategoryes();
 
+// Дата в расходах
 renderExpensesDate();
 
 // Таблицу "Тотал"
