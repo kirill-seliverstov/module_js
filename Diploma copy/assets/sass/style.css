@@ -372,14 +372,21 @@ textarea {
 }
 
 .input {
-  color: #d63f74;
-  border: 1px solid;
+  color: #333;
+  border: 1px solid #d63f74;
+  background-color: #d7cfdc;
 }
 .input::placeholder {
-  color: #d63f74;
+  color: #333;
 }
 .input::-webkit-calendar-picker-indicator {
   background-color: #d63f74;
+}
+
+.select {
+  color: #333;
+  border: 1px solid #d63f74;
+  background-color: #d7cfdc;
 }
 
 .modal {
@@ -404,15 +411,8 @@ textarea {
   background-color: #333;
 }
 
-.categories {
-  background-color: rgba(59, 16, 83, 0.199);
-  color: #d63f74;
-}
-
 .categories__title {
-  padding-top: 100px;
   margin-bottom: 25px;
-  color: #d63f74;
 }
 
 .categories__enter-name {
@@ -466,6 +466,11 @@ textarea {
 
 * {
   font-family: Quicksand !important;
+  color: #333;
+}
+
+body {
+  background-color: #d7cfdc;
 }
 
 .title {

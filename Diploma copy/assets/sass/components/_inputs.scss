@@ -1,9 +1,10 @@
 .input {
-    color: $pink;
-    border: 1px solid;
+    color: $black;
+    border: 1px solid $pink;
+    background-color: $purple-background;
 
     &::placeholder {
-        color: $pink;
+        color: $black;
     }
 
     &::-webkit-calendar-picker-indicator {

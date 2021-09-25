@@ -11,6 +11,8 @@ let editOperationDate = document.querySelector('.modal__date');
 
 let editIndexElement = null;
 
+let btnCancelFilter = document.querySelector('.js-cancel-filter');
+
 let paramsFitlers = {
     category: '',
     sum: '',
@@ -34,6 +36,12 @@ btnCancelModal.addEventListener("click", function(e){
 
     closeModal();
 })
+
+// btnCancelFilter.addEventListener("click", function(e) {
+//     e.preventDefault(); 
+
+//     renderTotal(total);
+// });
 
 function renderTotal(arrTotal) {
     let allCell = '';
@@ -89,15 +97,15 @@ function closeModal() {
 
 function renderTotalCategoryes(className) {
     let selectCategories = document.querySelector(`.${className}`);
-
-    selectCategories.innerHTML = '<option value="" disabled selected hidden>Select category</option>';
     
+    selectCategories.innerHTML = '<option value="">All categories</option>';
+
     categories.forEach(function(category) {
         let option = document.createElement('option');
-        
+
         option.value = category;
         option.textContent = category;
-        
+
         selectCategories.appendChild(option);
     })
 }
@@ -105,22 +113,22 @@ function renderTotalCategoryes(className) {
 // Filters
 document.querySelector(".filter-category").oninput = function(){
     paramsFitlers.category = this.value;
-    filterTotal()
+    filterTotal();
 }
 
 document.querySelector(".filter-sum").oninput = function(){
     paramsFitlers.sum = this.value;
-    filterTotal()
+    filterTotal();
 }
 
 document.querySelector(".filter-date").oninput = function(){
     paramsFitlers.date = this.value;
-    filterTotal()
+    filterTotal();
 }
 
 document.querySelector(".filter-operation").oninput = function(){
     paramsFitlers.operation = this.value;
-    filterTotal()
+    filterTotal();
 }
 
 function filterTotal(){
@@ -133,3 +141,4 @@ function filterTotal(){
 
     renderTotal(totalFilers);
 }
+

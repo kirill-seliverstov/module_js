@@ -34,14 +34,14 @@ function addOperation(e) {
     let valueCategory = newOperationCategory.value;
     let valueDate = newOperationDate.value;
 
-    let newExpenses = {
+    let newOperation = {
         sum: valueSum,
         category: valueCategory,
         date: valueDate,
         status: flagOperation,
     };
 
-    total.push(newExpenses);
+    total.push(newOperation);
 
     clearForm();
     filterTotal();
