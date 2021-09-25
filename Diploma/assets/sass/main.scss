@@ -3,21 +3,29 @@
 @import './abstracts/variables';
 @import './components/buttons';
 @import './components/inputs';
+@import './components/selects';
+@import './components/modal';
 @import './layout/categories';
+@import './layout/operation';
+@import './layout/total';
 
 * {
-    font-family: Quicksand !important
+    font-family: Quicksand !important;
+    color: $black;
+}
+
+body {
+    background-color: $purple-background;
 }
 
 .title {
     font-size: 40px;
-    color: $black;
 }
 
 .section {
     margin: 0 auto;
     max-width: 920px;
-    padding-top: 100px;
+    margin-top: 80px;
     text-align: center;
 }
 

@@ -5,16 +5,11 @@
 .categories__enter-name {
     width: 30%;
     padding-left: 10px;
-    // color: $pink;
-    // border: 1px solid;
-
-    // &::placeholder {
-    //     color: $pink;
-    // }
 }
 
 .categories__wrapper {
     margin-top: 25px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -1,0 +1,14 @@
+.total {
+    tr {
+        padding: 10px;
+    }
+
+    &__cell {
+        padding: 5px;
+    }
+
+    &__head {
+        background: $light-pink;
+    }
+}
+

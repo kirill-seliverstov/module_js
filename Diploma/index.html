@@ -4,46 +4,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Moneybag</title>
     <link rel="stylesheet" href="./assets/sass/style.css">
 </head>
 <body>
     <section class="section categories">
-        <p class="title categories__title">categories</p>
-            <div>
-                <form action="#">
-                    <input class="categories__enter-name input" id="js-category-name" type="text" placeholder="Enter category name">
-                    <button class="button categories__add" id="js-add-category">+</button>
-                </form>
-            </div>
+        <p class="categories__title title">categories</p>
+        <div>
+            <form action="#">
+                <input class="categories__enter-name input" id="js-category-name" type="text" placeholder="Enter category name">
+                <button class="button categories__add" id="js-add-category">+</button>
+            </form>
+        </div>
 
-            <div class="categories__wrapper" id="js-list-of-categories">
+        <div class="categories__wrapper" id="js-list-of-categories">
                 
-            </div>        
-    </section>
-
-    <section class="section">
-        <button class="button">expenses</button>
-        <button class="button">income</button>
-    </section>
-
-    <section class="section expenses">
-        <p class="title categories__title">expenses</p>
-        <form class="expenses__form" action="#">
-            <input class="expenses__sum" type="number" name="" id="">
-            <select class="expenses__category" name="" id=""></select>
-            <input class="expenses__date" type="date" name="" id="">
-            <button class="js-add-expenses-button button">Add expense</button>
+        </div>
+        <div>
+            <p>choose operation: </p>
+            <div>
+                <button class="expenses button">expenses</button>
+                <button class="income button">income</button>
+            </div>
+        </div>   
+        
+        <form class="operation__form operation__form--hidden" action="#">
+            <input class="operation__sum input" type="number" name="" id="">
+            <select class="operation__category input" name="" id=""></select>
+            <input class="operation__date input" type="date" name="" id="">
+            <input class="js-add-operation button input" type="submit">
         </form>
-
-        <div class="expenses__list"></div>
-
-
     </section>
+
+    <!-- <section class="section operation">
+        
+    </section> -->
+
+    <table class="section total">
+        <thead class="total__head">
+            <tr>
+                <td class="total__cell">
+                    #
+                </td>
+                <td class="total__cell">
+                    Category
+                </td>
+                <td class="total__cell">
+                    Sum
+                </td>
+                <td class="total__cell">
+                    Date
+                </td>
+                <td class="total__cell">
+                    Operation
+                </td>
+                <td class="total__cell">
+                    Control
+                </td>
+            </tr>
+            <tr>
+                <td class="total__cell total__cell--empty">
+                    
+                </td>
+                <td class="total__cell">
+                    <select class="filter-category select"></select>
+                </td>
+                <td class="total__cell">
+                    <input class="filter-sum input" type="text" placeholder="Enter sum of money">
+                </td>
+                <td class="total__cell">
+                    <input class="filter-date input" type="date" placeholder="Enter date">
+                </td>
+                <td class="total__cell">
+                    <select class="filter-operation select">
+                        <option value="">All</option>
+                        <option value="expenses">Expenses</option>
+                        <option value="income">Income</option>
+                    </select>
+                </td>
+                <td class="total__cell total__cell--empty">
+                </td>
+            </tr>
+        </thead>
+        <tbody class="total__body">
+
+        </tbody>
+    </table>
+
+    <div class="modal modal--hidden">
+        <form class="modal__form">
+            <input class="modal__sum input" type="number">
+            <select class="modal__category input"></select>
+            <input class="modal__date input" type="date">
+
+            <input class="js-edit-modal button" type="submit" value="Edit">
+            <input class="js-cancel-modal button" type="submit" value="Cancel">
+        </form>
+    </div>
+
+
 
     <script src="./assets/js/variables.js"></script>
     <script src="./assets/js/categories.js"></script>
-    <script src="./assets/js/expenses.js"></script>
+    <script src="./assets/js/operation.js"></script>
+    <script src="./assets/js/total.js"></script>
     <script src="./assets/js/innit.js"></script>
 </body>
 </html>

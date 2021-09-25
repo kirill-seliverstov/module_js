@@ -11,6 +11,8 @@ let editOperationDate = document.querySelector('.modal__date');
 
 let editIndexElement = null;
 
+let btnCancelFilter = document.querySelector('.js-cancel-filter');
+
 let paramsFitlers = {
     category: '',
     sum: '',
@@ -33,7 +35,7 @@ btnCancelModal.addEventListener("click", function(e){
     e.preventDefault();
 
     closeModal();
-})
+});
 
 function renderTotal(arrTotal) {
     let allCell = '';
@@ -41,12 +43,12 @@ function renderTotal(arrTotal) {
     arrTotal.forEach((operation, index) => {
         allCell += `
             <tr>
-                <td>${ index + 1 }</td>
-                <td>${ operation.category }</td>
-                <td>${ operation.sum }</td>
-                <td>${ operation.date }</td>
-                <td>${ operation.status }</td>
-                <td>
+                <td class="total__cell">${ index + 1 }</td>
+                <td class="total__cell">${ operation.category }</td>
+                <td class="total__cell">${ operation.sum }</td>
+                <td class="total__cell">${ operation.date }</td>
+                <td class="total__cell">${ operation.status }</td>
+                <td class="total__cell">
                     <button class="button" onclick="editCell(${index})">Edit</button>
                     <button class="button" onclick="deleteCell(${index})">Delete</button>
                 </td>
@@ -88,39 +90,40 @@ function closeModal() {
 }
 
 function renderTotalCategoryes(className) {
-    let selectCategoryes = document.querySelector(`.${className}`);
+    let selectCategories = document.querySelector(`.${className}`);
+    
+    selectCategories.innerHTML = '<option value="">All categories</option>';
 
-    selectCategoryes.innerHTML = '<option value="">Select category</option>';
-
-    categoryes.forEach(function(category) {
+    categories.forEach(function(category) {
         let option = document.createElement('option');
 
         option.value = category;
         option.textContent = category;
 
-        selectCategoryes.appendChild(option);
+        selectCategories.appendChild(option);
     })
+
 }
 
 // Filters
 document.querySelector(".filter-category").oninput = function(){
     paramsFitlers.category = this.value;
-    filterTotal()
+    filterTotal();
 }
 
 document.querySelector(".filter-sum").oninput = function(){
     paramsFitlers.sum = this.value;
-    filterTotal()
+    filterTotal();
 }
 
 document.querySelector(".filter-date").oninput = function(){
     paramsFitlers.date = this.value;
-    filterTotal()
+    filterTotal();
 }
 
 document.querySelector(".filter-operation").oninput = function(){
     paramsFitlers.operation = this.value;
-    filterTotal()
+    filterTotal();
 }
 
 function filterTotal(){
@@ -131,5 +134,6 @@ function filterTotal(){
         (el.status === paramsFitlers.operation || !paramsFitlers.operation)
     })
 
-    renderTotal(totalFilers)
+    renderTotal(totalFilers);
 }
+
