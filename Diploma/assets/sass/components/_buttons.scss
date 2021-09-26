@@ -2,4 +2,13 @@
     color: $pink;
     border: 1px solid $pink;
     background-color: inherit;
+
+    &--change-theme {
+        margin: 10px;
+    }
+
+    &--blue-theme {
+        color: $purple;
+        border: 1px solid $blue;
+    }
 }

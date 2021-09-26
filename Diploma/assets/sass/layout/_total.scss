@@ -9,6 +9,12 @@
 
     &__head {
         background: $light-pink;
+
+        &--blue-theme {
+            background: $light-blue;
+        }
     }
+
+    
 }
 

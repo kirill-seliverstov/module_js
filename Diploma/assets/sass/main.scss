@@ -8,14 +8,17 @@
 @import './layout/categories';
 @import './layout/operation';
 @import './layout/total';
+@import './layout/header';
 
-* {
+.page {
+    background-color: $purple-background;
     font-family: Quicksand !important;
-    color: $black;
+    color: $pink;
 }
 
-body {
-    background-color: $purple-background;
+.blue-theme {
+    background-color: $blue-background;
+    color: $purple;
 }
 
 .title {

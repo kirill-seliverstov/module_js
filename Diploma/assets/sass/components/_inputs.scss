@@ -1,13 +1,27 @@
 .input {
-    color: $black;
+    color: $pink;
     border: 1px solid $pink;
     background-color: $purple-background;
 
     &::placeholder {
-        color: $black;
+        color: $pink;
     }
 
     &::-webkit-calendar-picker-indicator {
         background-color: $light-pink;
+    }
+    
+    &--blue-theme {
+        color: $purple;
+        background-color: $blue-background;
+        border: 1px solid $blue;
+
+        &::placeholder {
+            color: $purple;
+        }
+
+        &::-webkit-calendar-picker-indicator {
+            background-color: $light-blue;
+        }
     }
 }

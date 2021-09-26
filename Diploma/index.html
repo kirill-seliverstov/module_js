@@ -7,7 +7,12 @@
     <title>Moneybag</title>
     <link rel="stylesheet" href="./assets/sass/style.css">
 </head>
-<body>
+<header class="header">
+    <p class="header__icon">$</p>
+    <button class="button button--change-theme" type="button">Change theme</button>
+</header>
+
+<body class="page">
     <section class="section categories">
         <p class="categories__title title">categories</p>
         <div>
@@ -35,10 +40,6 @@
             <input class="js-add-operation button input" type="submit">
         </form>
     </section>
-
-    <!-- <section class="section operation">
-        
-    </section> -->
 
     <table class="section total">
         <thead class="total__head">
@@ -109,5 +110,6 @@
     <script src="./assets/js/operation.js"></script>
     <script src="./assets/js/total.js"></script>
     <script src="./assets/js/innit.js"></script>
+    <script src="./assets/js/dark-theme.js"></script>
 </body>
 </html>

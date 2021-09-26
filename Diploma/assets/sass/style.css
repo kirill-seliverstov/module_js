@@ -370,34 +370,57 @@ textarea {
   border: 1px solid #d63f74;
   background-color: inherit;
 }
+.button--change-theme {
+  margin: 10px;
+}
+.button--blue-theme {
+  color: #8860d0;
+  border: 1px solid #5680e9;
+}
 
 .input {
-  color: #333;
+  color: #d63f74;
   border: 1px solid #d63f74;
   background-color: #d7cfdc;
 }
 .input::placeholder {
-  color: #333;
+  color: #d63f74;
 }
 .input::-webkit-calendar-picker-indicator {
   background-color: #d63f745c;
 }
+.input--blue-theme {
+  color: #8860d0;
+  background-color: #c1c8e496;
+  border: 1px solid #5680e9;
+}
+.input--blue-theme::placeholder {
+  color: #8860d0;
+}
+.input--blue-theme::-webkit-calendar-picker-indicator {
+  background-color: #84ceeb;
+}
 
 .select {
-  color: #333;
+  color: #d63f74;
   border: 1px solid #d63f74;
   background-color: #d7cfdc;
+}
+.select--blue-theme {
+  color: #8860d0;
+  border: 1px solid #5680e9;
+  background-color: #c1c8e496;
 }
 
 .modal {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  background: rgba(27, 27, 27, 0.8);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(27, 27, 27, 0.938);
 }
 .modal--hidden {
   display: none;
@@ -461,14 +484,37 @@ textarea {
 .total__head {
   background: #d63f745c;
 }
-
-* {
-  font-family: Quicksand !important;
-  color: #333;
+.total__head--blue-theme {
+  background: #84ceeb;
 }
 
-body {
+.header {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #d63f74;
+}
+.header__icon {
+  font-size: 35px;
+  margin: 10px;
+  color: #d63f74;
+}
+.header__icon--blue-theme {
+  color: #8860d0;
+}
+.header--blue-theme {
+  color: #8860d0;
+  border-bottom: 1px solid #5680e9;
+}
+
+.page {
   background-color: #d7cfdc;
+  font-family: Quicksand !important;
+  color: #d63f74;
+}
+
+.blue-theme {
+  background-color: #c1c8e496;
+  color: #8860d0;
 }
 
 .title {
