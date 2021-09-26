@@ -2,19 +2,10 @@
     display: flex;
     justify-content: space-around;
     border-bottom: 1px solid $pink;
+    color: $pink;
 
     &__icon {
         font-size: 35px;
         margin: 10px;
-        color: $pink;
-
-        &--blue-theme {
-            color: $purple;
-        }
-    }
-
-    &--blue-theme {
-        color: $purple;
-        border-bottom: 1px solid $blue;
     }
 }

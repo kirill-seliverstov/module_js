@@ -1,0 +1,42 @@
+.blue-theme {
+    background-color: $blue-background !important;
+    color: $purple !important;
+    
+    .header{
+            color: $purple;
+            border-bottom: 1px solid $blue;
+    }
+
+    .button {
+        color: $purple;
+        border: 1px solid $blue;
+    }
+
+    .input {
+        color: $purple;
+        background-color: $blue-background;
+        border: 1px solid $blue;
+
+        &::placeholder {
+            color: $purple;
+        }
+
+        &::-webkit-calendar-picker-indicator {
+            background-color: $light-blue;
+        }
+    }
+
+    .select {
+        color: $purple;
+        border: 1px solid $blue;
+        background-color: $blue-background;
+    }
+
+    .total__head {
+        background: $light-blue;
+    }
+
+    .modal {
+        background-color: #7cc2dd;
+    }
+}

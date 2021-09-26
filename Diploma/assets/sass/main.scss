@@ -9,16 +9,12 @@
 @import './layout/operation';
 @import './layout/total';
 @import './layout/header';
+@import './themes/blue';
 
 .page {
     background-color: $purple-background;
     font-family: Quicksand !important;
     color: $pink;
-}
-
-.blue-theme {
-    background-color: $blue-background;
-    color: $purple;
 }
 
 .title {

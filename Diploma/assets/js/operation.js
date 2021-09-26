@@ -8,6 +8,8 @@ let newOperationSum = document.querySelector('.operation__sum');
 let newOperationCategory = document.querySelector('.operation__category');
 let newOperationDate = document.querySelector('.operation__date');
 
+
+
 let flagOperation = null;
 
 newButtonExpenses.addEventListener('click', function(){ renderFormOperation('expenses') });
@@ -33,6 +35,10 @@ function addOperation(e) {
     let valueSum = newOperationSum.value;
     let valueCategory = newOperationCategory.value;
     let valueDate = newOperationDate.value;
+    
+    if(validateOperation(valueSum, valueCategory, valueDate)) {
+        return;
+    }
 
     let newOperation = {
         sum: valueSum,
@@ -47,6 +53,17 @@ function addOperation(e) {
     filterTotal();
 }
 
+function validateOperation (sum, category, date) {
+    let hasErrors = false;
+
+    if(sum === "" || category === "" || date === ""){
+        hasErrors = true;
+    }
+
+    return hasErrors;
+}
+
+// Селект в таблице
 function renderExpensesCategories() {
     let selectCategories = document.querySelector('.operation__category');
 
@@ -76,6 +93,8 @@ function renderExpenses() {
         listOfExpenses.appendChild(templateExpenseItem(expense));
     });
 };
+
+
 
 function clearForm(){
     newOperationSum.value = '';

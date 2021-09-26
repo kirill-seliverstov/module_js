@@ -373,10 +373,6 @@ textarea {
 .button--change-theme {
   margin: 10px;
 }
-.button--blue-theme {
-  color: #8860d0;
-  border: 1px solid #5680e9;
-}
 
 .input {
   color: #d63f74;
@@ -405,11 +401,6 @@ textarea {
   color: #d63f74;
   border: 1px solid #d63f74;
   background-color: #d7cfdc;
-}
-.select--blue-theme {
-  color: #8860d0;
-  border: 1px solid #5680e9;
-  background-color: #c1c8e496;
 }
 
 .modal {
@@ -484,37 +475,57 @@ textarea {
 .total__head {
   background: #d63f745c;
 }
-.total__head--blue-theme {
-  background: #84ceeb;
-}
 
 .header {
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid #d63f74;
+  color: #d63f74;
 }
 .header__icon {
   font-size: 35px;
   margin: 10px;
-  color: #d63f74;
 }
-.header__icon--blue-theme {
-  color: #8860d0;
+
+.blue-theme {
+  background-color: #c1c8e496 !important;
+  color: #8860d0 !important;
 }
-.header--blue-theme {
+.blue-theme .header {
   color: #8860d0;
   border-bottom: 1px solid #5680e9;
+}
+.blue-theme .button {
+  color: #8860d0;
+  border: 1px solid #5680e9;
+}
+.blue-theme .input {
+  color: #8860d0;
+  background-color: #c1c8e496;
+  border: 1px solid #5680e9;
+}
+.blue-theme .input::placeholder {
+  color: #8860d0;
+}
+.blue-theme .input::-webkit-calendar-picker-indicator {
+  background-color: #84ceeb;
+}
+.blue-theme .select {
+  color: #8860d0;
+  border: 1px solid #5680e9;
+  background-color: #c1c8e496;
+}
+.blue-theme .total__head {
+  background: #84ceeb;
+}
+.blue-theme .modal {
+  background-color: #7cc2dd;
 }
 
 .page {
   background-color: #d7cfdc;
   font-family: Quicksand !important;
   color: #d63f74;
-}
-
-.blue-theme {
-  background-color: #c1c8e496;
-  color: #8860d0;
 }
 
 .title {

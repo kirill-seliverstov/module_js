@@ -12,7 +12,7 @@ function addCategory(e) {
 
     // Добавление категории в глобальную переменную
     
-    if(validateCategoty(categoryName.value)) {
+    if(validateCategory(categoryName.value)) {
         return
     }
     
@@ -30,11 +30,13 @@ function renderCategory() {
         listOfCategories.appendChild(templateCategoryItem(category));
     });
 
+    renderTotalCategoryes();
+    renderModalCategoryes();
     renderExpensesCategories();
 }
 
 // Валидация категорий
-function validateCategoty (category) {
+function validateCategory (category) {
     let hasErrors = false;
 
     if(category === "") {

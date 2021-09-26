@@ -23,9 +23,9 @@ let paramsFitlers = {
 btnEditModal.addEventListener("click", function(e){
     e.preventDefault();
 
-    total[editIndexElement].sum = editOperationSum.value
-    total[editIndexElement].category = editOperationCategory.value
-    total[editIndexElement].date = editOperationDate.value
+    total[editIndexElement].sum = editOperationSum.value;
+    total[editIndexElement].category = editOperationCategory.value;
+    total[editIndexElement].date = editOperationDate.value;
 
     filterTotal(total);
     closeModal();
@@ -76,7 +76,7 @@ function editCell(index) {
 }
 
 function openModal() {
-    modal.classList.remove('modal--hidden')
+    modal.classList.remove('modal--hidden');
 }
 
 function closeModal() {
@@ -89,9 +89,25 @@ function closeModal() {
     editIndexElement = null;
 }
 
-function renderTotalCategoryes(className) {
-    let selectCategories = document.querySelector(`.${className}`);
-    
+function renderModalCategoryes() {
+    let selectCategories = document.querySelector('.modal__category');
+
+    selectCategories.innerHTML = '<option value="">All categories</option>';
+
+    categories.forEach(function(category) {
+        let option = document.createElement('option');
+
+        option.value = category;
+        option.textContent = category;
+
+        selectCategories.appendChild(option);
+    })
+
+}
+
+function renderTotalCategoryes() {
+    let selectCategories = document.querySelector('.filter-category');
+
     selectCategories.innerHTML = '<option value="">All categories</option>';
 
     categories.forEach(function(category) {
